@@ -1,27 +1,28 @@
 # Google Maps Review Scraper
 
-*Automation script for extracting Google Maps reviews of any place using Selenium and Python.*
+_Automation script for extracting Google Maps reviews of any place using Selenium and Python._
 
 ## 📌 Overview
 
-This project automates the process of scraping reviews from Google Maps. It scrolls through the reviews section, extracts relevant information, and stores it in a structured format (CSV/JSON).
+This project automates the process of scraping reviews from Google Maps. It scrolls through the reviews section, extracts relevant information, and stores it in a structured format (JSON).
 
 You can use this for:
 
-* Research and analytics
-* Sentiment analysis
-* Business insights
-* Data collection projects
+- Research and analytics
+- Website testimonial
+- Sentiment analysis
+- Business insights
+- Data collection projects
 
 ---
 
 ## ✨ Features
 
-* Automatically loads and scrolls through all reviews
-* Extracts reviewer name, rating, date, and full review text
-* Saves data in CSV or JSON format
-* Easy-to-run Python script
-* Modular and extendable code
+- Automatically loads and scrolls through all reviews
+- Extracts reviewer name, profile image, rating and full review text
+- Saves data in JSON format
+- Easy-to-run Python script
+- Modular and extendable code
 
 ---
 
@@ -53,13 +54,13 @@ pip install -r requirements.txt
 Or manually install:
 
 ```bash
-pip install selenium pandas
+pip install selenium bs4 flask
 ```
 
 ### 4. Install WebDriver
 
-* Download ChromeDriver matching your Chrome version
-* Place it in your project folder or system PATH
+- Download ChromeDriver matching your Chrome version
+- Place it in your project folder or system PATH
 
 ---
 
@@ -101,25 +102,19 @@ Then open the displayed URL in your browser (usually `http://127.0.0.1:5000`).
 ├── data.json           # Scraped output data
 ├── requirements.txt
 ├── README.md
+├── templates
+|  └── index.html
 └── images/             # (Optional) folder for screenshots
-```
-
-├── scraper.py
-├── requirements.txt
-├── README.md
-└── output/
-└── reviews.csv
-
 ```
 
 ---
 
 ## 🖼️ Screenshots / Preview
+
 > _Place your screenshots here_
 
-(Add images like below once ready)
 ```
-
+[Screenshots](Screenshots/preview.png)
 ![Preview](images/preview.png)
 
 ```
@@ -127,16 +122,21 @@ Then open the displayed URL in your browser (usually `http://127.0.0.1:5000`).
 ---
 
 ## 🤝 Contributing
+
 Feel free to open issues or make PRs to improve the scraper.
 
 ---
 
 ## 📄 License
+
 MIT License
 
 ---
 
 ## ⭐ Support
+
 If you like this project, consider giving the repo a ⭐
+
+```
 
 ```
