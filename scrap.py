@@ -1,6 +1,5 @@
 # Insert google maps review section url here.
 # url = "GOOGLE_MAPS_REVIEW_URL"
-url = "https://www.google.com/maps/place/Ganeshsthan+Temple/@27.7005687,84.4468399,15z/data=!4m8!3m7!1s0x3994e5cf97bbac17:0x3a169f1b4476c85c!8m2!3d27.706111!4d84.4429832!9m1!1b1!16s%2Fm%2F03gqnjd?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D"
 
 # import libraries
 from selenium import webdriver
@@ -76,6 +75,8 @@ for review in reviews:
         print("error fetching reviews")
         pass
 
+# Dump all scrapped Data into data.json file
 with open("data.json", "w", encoding="UTF-8") as f:
     json.dump(list, f, indent=4)
+
 driver.quit()
