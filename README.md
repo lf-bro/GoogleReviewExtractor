@@ -104,16 +104,15 @@ Then open the displayed URL in your browser (usually `http://127.0.0.1:5000`).
 ├── README.md
 ├── templates
 |  └── index.html
-└── images/             # (Optional) folder for screenshots
+└── Screenshots/             # (Optional) folder for screenshots
 ```
 
 ---
 
 ## 🖼️ Screenshots / Preview
 
-```
 ![Preview](Screenshots/preview.png)
-```
+<!-- <img src="Screenshots"/> -->
 
 ---
 
