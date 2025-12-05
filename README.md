@@ -1,2 +1,142 @@
-# GoogleReviewExtractor
-GoogleReviewExtractor
+# Google Maps Review Scraper
+
+*Automation script for extracting Google Maps reviews of any place using Selenium and Python.*
+
+## 📌 Overview
+
+This project automates the process of scraping reviews from Google Maps. It scrolls through the reviews section, extracts relevant information, and stores it in a structured format (CSV/JSON).
+
+You can use this for:
+
+* Research and analytics
+* Sentiment analysis
+* Business insights
+* Data collection projects
+
+---
+
+## ✨ Features
+
+* Automatically loads and scrolls through all reviews
+* Extracts reviewer name, rating, date, and full review text
+* Saves data in CSV or JSON format
+* Easy-to-run Python script
+* Modular and extendable code
+
+---
+
+## 🛠️ Installation
+
+Follow these steps to set up the script on your machine.
+
+### 1. Clone this repository
+
+```bash
+git clone https://github.com/yourusername/google-maps-review-scraper.git
+cd google-maps-review-scraper
+```
+
+### 2. Create a virtual environment (optional but recommended)
+
+```bash
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+```
+
+### 3. Install required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+Or manually install:
+
+```bash
+pip install selenium pandas
+```
+
+### 4. Install WebDriver
+
+* Download ChromeDriver matching your Chrome version
+* Place it in your project folder or system PATH
+
+---
+
+## 🚀 Usage
+
+### ▶️ Run the Scraper
+
+To run the script that collects reviews:
+
+```bash
+python scrap.py
+```
+
+This will:
+
+1. Launch Chrome via Selenium
+2. Open Google Maps
+3. Scroll through reviews
+4. Extract all data
+5. Save it to `data.json`
+
+### ▶️ Run the Flask Server
+
+If you want to serve the extracted data using a simple web interface:
+
+```bash
+python app.py
+```
+
+Then open the displayed URL in your browser (usually `http://127.0.0.1:5000`).
+
+---
+
+## 📂 Project Structure
+
+```
+├── scrap.py            # Main script for scraping Google Maps reviews
+├── app.py              # Flask server to serve/display data
+├── data.json           # Scraped output data
+├── requirements.txt
+├── README.md
+└── images/             # (Optional) folder for screenshots
+```
+
+├── scraper.py
+├── requirements.txt
+├── README.md
+└── output/
+└── reviews.csv
+
+```
+
+---
+
+## 🖼️ Screenshots / Preview
+> _Place your screenshots here_
+
+(Add images like below once ready)
+```
+
+![Preview](images/preview.png)
+
+```
+
+---
+
+## 🤝 Contributing
+Feel free to open issues or make PRs to improve the scraper.
+
+---
+
+## 📄 License
+MIT License
+
+---
+
+## ⭐ Support
+If you like this project, consider giving the repo a ⭐
+
+```
