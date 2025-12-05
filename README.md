@@ -112,7 +112,7 @@ Then open the displayed URL in your browser (usually `http://127.0.0.1:5000`).
 ## 🖼️ Screenshots / Preview
 
 ```
-![Screenshots](Screenshots/preview.png)
+![Preview](Screenshots/preview.png)
 ```
 
 ---
